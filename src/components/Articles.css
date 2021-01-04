@@ -1,0 +1,118 @@
+.Articles {
+    padding: 4rem;
+    
+    font-family: "Ubuntu";
+    color:white;
+    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .ArticlesContainer {
+    display: inline-flexbox;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .ArticlesWrapper {
+    position: relative;
+    margin: 25px 0 10px;
+  }
+  
+  .ArticlesList {
+    margin-bottom: 24px;
+  }
+  
+  .Article {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  
+  .ArticleLink {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .ArticleImgWrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .ArticleImgWrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #850202;
+    box-sizing: border-box;
+  }
+  
+  .ArticleImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  
+  .ArticleImg:hover {
+    transform: scale(1.1);
+  }
+  
+  .ArticleInfo {
+    padding: 20px 30px 30px;
+  }
+  
+  .ArticleText {
+    color: #ffffff;
+    font-size: 12px;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .ArticlesList {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .Article {
+      margin-bottom: 2rem;
+    }
+  }

@@ -1,0 +1,96 @@
+.FooterContainer{
+    background-color:rgb(161, 155, 155);
+    font-size: 1.5rem;
+    width:100%;
+    position: flex;
+    left:0;
+    bottom:0;
+    flex-direction: row;
+    display:inline-flex;
+    font-family: "Ubuntu";
+    color:white;
+    justify-content: center;
+
+    
+}
+.FooterContainer p{
+    font-size: 0.2em;
+    text-align: left;
+}
+
+.FooterContainer tr{
+    order:5;
+    padding:5rem;
+    text-align: center;
+}
+
+.FooterContainer th{
+    padding-bottom:2rem;
+    padding-left:8rem;
+    padding-right:8rem;
+    text-align: center;
+}
+
+.FooterContainer .fa-facebook-square{
+    font-size:3rem;
+}
+.FooterContainer .fa-instagram-square{
+    font-size:3rem;
+}
+.FooterContainer .fa-youtube-square{
+    font-size:3rem;
+}
+.FooterContainer .fa-youtube-square:hover{
+    
+    color:red;
+    transition: all 0.4s ease-out;
+}
+.FooterContainer .fa-instagram-square:hover{
+    color:red;
+    transition: all 0.4s ease-out;
+}
+.FooterContainer .fa-facebook-square:hover{
+    color:red;
+    transition: all 0.4s ease-out;
+}
+
+.FooterContainer .fa-map-marker-alt{
+    color:red;
+}
+.FooterContainer .fa-phone-square-alt{
+    color:red;
+}
+.FooterContainer .fa-envelope{
+    color:red;
+}
+
+
+.FooterContainer td{
+    font-size:1.25rem;
+}
+.FooterContainer td:first-child{
+    font-size:1.25rem;
+    text-align:left;  
+}
+.FooterContainer table{
+    align-self: center;
+    text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+    .FooterContainer {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .FooterContainer {
+      width:100%;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .FooterContainer th {
+       padding:0;
+    }
+  }
+

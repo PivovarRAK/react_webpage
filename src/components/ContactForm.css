@@ -1,0 +1,51 @@
+.ContactForm input{
+    border-left:0;
+    border-right:0;
+    border-top:0;
+    color:white;
+}
+
+.inputName{
+    margin-top:1rem; 
+    margin-bottom:3rem; 
+    outline: none;
+    border-bottom: 3px solid rgb(114, 114, 114);
+    background:black;
+}
+.inputName:focus{
+   border-bottom: 3px solid red;
+
+   transition: all 0.5s ease;
+
+}
+.inputMail:focus{
+    border-bottom: 3px solid red;
+ 
+    transition: all 0.5s ease;
+ 
+ }
+ .inputMessage:focus{
+    border-bottom: 3px solid red;
+ 
+    transition: all 0.5s ease;
+ 
+ }
+
+.inputMessage{
+    width:30rem;
+    height:10rem;
+    text-align:left;
+    outline: none;
+    align-content:left;
+    margin-top:1rem; 
+    margin-bottom:3rem; 
+    border-bottom: 3px solid rgb(114, 114, 114);
+    background:black;
+}
+.inputMail{
+    margin-top:1rem; 
+    margin-bottom:3rem; 
+    outline: none; 
+    border-bottom: 3px solid rgb(114, 114, 114);
+    background:black;
+}
