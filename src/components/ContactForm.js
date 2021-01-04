@@ -56,7 +56,7 @@ class ContactForm extends React.Component {
         <div className="ContactForm">
             <div className="ContactFormContainer">
               <p>Hast du eine Frage, möchtest du uns ein Ladengeschäft vorstellen oder interessierst du dich für einen Job? Melde dich bei uns:</p>
-                <form className="ContactFormForm" onSubmit={this.handleSubmit}>
+                <form className="ContactFormForm" >
                     <div className="inputNameDiv">
                     <label >Ihr Name </label><br/>
                     <input  autoComplete="off" required className="inputName"value={this.state.Name} onChange={this.handleChangeName}></input><br />
@@ -69,7 +69,7 @@ class ContactForm extends React.Component {
                     <label >Ihre Nachricht</label><br/>
                     <input autoComplete="off" required className="inputMessage" value={this.state.Message} onChange={this.handleChangeMessage} ></input><br />
                     </div>
-                    <Button onClick="submit" className="sendButton" buttonSize="btn--large" buttonStyle="btn--outline" >Absenden</Button>
+                    <Button onClick={this.handleSubmit} className="sendButton" buttonSize="btn--large" buttonStyle="btn--outline" >Absenden</Button>
                    
                 </form>
                 
