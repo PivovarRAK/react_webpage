@@ -48,3 +48,9 @@
       height:35rem;
     }
   }
+    
+  @media only screen and (max-width: 960px) {
+    .HeaderText h1 span{
+      font-size:5rem;
+    }
+  }

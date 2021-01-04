@@ -32,8 +32,8 @@
 }
 
 @media screen and (max-width:960px){
-    .PictureSectionContainer > h1{
-        color:white;
+    .PictureSectionContainer > h1{    
+        color:rgba(172, 67, 67);
         width:fit-content;
         font-size: 4rem;
         margin-bottom:0px;
@@ -48,7 +48,7 @@
 }
 @media screen and (max-width:720px){
     .PictureSectionContainer h1{
-        color:white;
+        color:rgba(172, 67, 67);
         width:fit-content;
         font-size: 3rem;
         margin-bottom:0px;
